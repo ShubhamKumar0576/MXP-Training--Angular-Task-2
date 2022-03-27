@@ -1,0 +1,58 @@
+<h1>List Of Employees </h1>
+
+<div class="form-group row"></div>
+<h4>Filter According to :</h4>
+<span style="float:left">
+    <label for="search" class="col-sm-3 col-form-label" style="text-align: right;">City :</label></span>
+    <div class="col-sm-2">
+      <span style="float:left"><input type="text" [(ngModel)]="searchCity" class="form-control" id="searchCity" placeholder="Enter here" style="border-radius:5px"/></span>
+    </div>
+
+    <span style="float:left">
+      <label for="search" class="col-sm-3 col-form-label" style="text-align: right;">Salary :</label></span>
+    <div class="col-sm-2">
+      <span style="float:left">
+      <input type="text" [(ngModel)]="searchSalary" class="form-control" id="searchSalary" placeholder="Enter here" style="border-radius:5px" /></span>
+  </div>
+
+  <span style="float:left">
+    <label for="search" class="col-sm-3 col-form-label" style="text-align: right;">Department Name :</label></span>
+  <div class="col-sm-2">
+    <span style="float:left">
+    <input type="text" [(ngModel)]="searchDepart" class="form-control" id="searchDepart" placeholder="Enter here" style="border-radius:5px"/></span>
+</div>
+
+
+
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Sno.</th>
+        <th scope="col">Name</th>
+        <th scope="col">Salary</th>
+        <th scope="col">Department</th>
+        <th scope="col">City</th>
+        <th scope="col">Mobile</th>
+        <th scope="col">Manager Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let e of employees | filter:searchCity | departFilter:searchDepart | salaryFilter:searchSalary">
+        <td scope="col">{{e.sno}}</td>
+        <td scope="col">{{e.name}}</td>
+        <td scope="col">{{e.salary}}</td>
+        <td scope="col">{{e.depart}}</td>
+        <td scope="col">{{e.city}}</td>
+        <td scope="col">{{e.mobile}}</td>
+        <td scope="col">{{e.managername}}</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+
+
+
+
+
+

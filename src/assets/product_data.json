@@ -1,0 +1,14 @@
+[
+    { "sno":1, "name":"SurfExcel", "brandname":"HUL", "modelname":"SE", "price":"400", "quantity": 10},
+    { "sno":2, "name":"Dove", "brandname":"HUL", "modelname":"DV", "price":"800", "quantity": 20},
+    { "sno":3, "name":"Horlicks", "brandname":"HUL", "modelname":"HL", "price":"600", "quantity": 40},
+    { "sno":4, "name":"Maggie", "brandname":"Nestle", "modelname":"MG", "price":"900", "quantity": 60},
+    { "sno":5, "name":"Kitkat", "brandname":"Nestle", "modelname":"KK", "price":"300", "quantity": 30},
+    { "sno":6, "name":"Nescafe", "brandname":"Nestle", "modelname":"NC", "price":"900", "quantity": 40},
+    { "sno":7, "name":"Tide", "brandname":"PNG", "modelname":"TD", "price":"1000", "quantity": 10},
+    { "sno":8, "name":"OLAY", "brandname":"PNG", "modelname":"OL", "price":"400", "quantity": 50},
+    { "sno":9, "name":"Pampers", "brandname":"PNG", "modelname":"PM", "price":"900", "quantity": 70},
+    { "sno":10, "name":"Colgate", "brandname":"Colgate", "modelname":"CG", "price":"3500", "quantity": 60}
+    
+
+    ]

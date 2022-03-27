@@ -1,0 +1,14 @@
+[
+    { "sno":1, "name":"Shubham Kumar", "salary":"50000", "depart":"IT", "city":"Ranchi", "mobile": 999989345 , "managername" : "PK Ghosh"},
+    { "sno":2, "name":"Ankit Mishra", "salary":"50000", "depart":"CSE", "city":"Bihar", "mobile": 999935656 , "managername" : "RK Charan Ghosh"},
+    { "sno":3, "name":"Himanshu Singh", "salary":"45000", "depart":"Data", "city":"Patna", "mobile": 9992239656 , "managername" : "Birendr Sharma"},
+    { "sno":4, "name":"Rohit Kumar", "salary":"35000", "depart":"IT", "city":"Mumbai", "mobile": 977589656 , "managername" : "MD Burman"},
+    { "sno":5, "name":"Mukul Verma", "salary":"25000", "depart":"Networking", "city":"Goa", "mobile": 993459656 , "managername" : "Sk Rao"},
+    { "sno":6, "name":"Sanket Raj", "salary":"40000", "depart":"Android", "city":"Ranchi", "mobile": 9349989656 , "managername" : "Tark Deyh"},
+    { "sno":7, "name":"Ranjan Sharma", "salary":"60000", "depart":"Web", "city":"Ranchi", "mobile": 789989656 , "managername" : "Anand Ghosh"},
+    { "sno":8, "name":"Rajeev Ranjan", "salary":"50000", "depart":"IT", "city":"Delhi", "mobile": 7123989656 , "managername" : "Auagi Ghosh"},
+    { "sno":9, "name":"Rohit chao", "salary":"40000", "depart":"Web", "city":"Ranchi", "mobile": 7821389656 , "managername" : "Kundu Datta"},
+    { "sno":10, "name":"Vikash Kumar", "salary":"70000", "depart":"Android", "city":"Mumbai", "mobile": 34589656 , "managername" : "Brij Lal"}
+       
+    ]
+    

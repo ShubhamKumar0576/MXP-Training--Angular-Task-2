@@ -1,0 +1,59 @@
+.form-group{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+h1{
+    color:antiquewhite;
+    margin-top: 10px;
+    text-align: center;
+    text-shadow: 10px;
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+
+.btn{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+   
+    
+}
+button{
+
+    position: relative;
+    left:5%;
+    background-color: rgb(252, 113, 0);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 30px
+  }
+  form{
+      margin-right: 70px;
+    background: none !important;
+
+}
+
+strong{
+    text-align: center;
+    color:rgb(212, 233, 164);
+    font-weight: 350;
+}
+label{
+
+    font-size: 15px;
+    font-weight: 550;
+    cursor: pointer;
+    display: inline-block;
+    padding: 3px 6px;
+    text-align: right;
+    width: 150px;
+    vertical-align: top;
+}
+
+input{
+    font-size: inherit;
+}

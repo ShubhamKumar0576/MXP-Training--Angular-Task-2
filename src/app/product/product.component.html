@@ -1,0 +1,58 @@
+<h1>List Of Products </h1>
+
+<div class="form-group row"></div>
+<h4>Filter According to :</h4>
+<span style="float:left">
+    <label for="search" class="col-sm-3 col-form-label" style="text-align: right;">Product Name :</label></span>
+    <div class="col-sm-2">
+      <span style="float:left"><input type="text" [(ngModel)]="searchName" class="form-control" id="searchName" placeholder="Enter here" style="border-radius:5px"/></span>
+    </div>
+
+    <span style="float:left">
+      <label for="search" class="col-sm-3 col-form-label" style="text-align: right;">Brand Name :</label></span>
+    <div class="col-sm-2">
+      <span style="float:left">
+      <input type="text" [(ngModel)]="searchBrand" class="form-control" id="searchBrand" placeholder="Enter here" style="border-radius:5px" /></span>
+  </div>
+
+  <span style="float:left">
+    <label for="search" class="col-sm-3 col-form-label" style="text-align: right;">Price :</label></span>
+  <div class="col-sm-2">
+    <span style="float:left">
+    <input type="text" [(ngModel)]="searchPrice" class="form-control" id="searchPrice" placeholder="Enter here" style="border-radius:5px"/></span>
+</div>
+
+
+
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Sno.</th>
+        <th scope="col">Name</th>
+        <th scope="col">Brand Name</th>
+        <th scope="col">Model Name</th>
+        <th scope="col">Price</th>
+        <th scope="col">Available Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let p of products | nameFilter:searchName | brandFilter:searchBrand | priceFilter:searchPrice ">
+        <td scope="col">{{p.sno}}</td>
+        <td scope="col">{{p.name}}</td>
+        <td scope="col">{{p.brandname}}</td>
+        <td scope="col">{{p.modelname}}</td>
+        <td scope="col">{{p.price}}</td>
+        <td scope="col">{{p.quantity}}</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+
+
+
+
+
+
+
+

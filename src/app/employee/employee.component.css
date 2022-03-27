@@ -1,0 +1,60 @@
+.form-group{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+h1{
+    color: rgb(13, 30, 109);
+    margin-top: 5px;
+    text-align: center;
+    text-shadow: 10px;
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+  h4{
+    color: rgb(250, 133, 0);
+    margin-bottom: 30px;
+    text-align: center;
+    text-shadow: 10px;
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+
+
+.btn{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+   
+    
+}
+
+
+strong{
+    text-align: center;
+    color:rgb(212, 233, 164);
+    font-weight: 350;
+}
+label{
+
+    font-size: 15px;
+    font-weight: 550;
+    cursor: pointer;
+    display: inline-block;
+    padding: 3px 6px;
+    text-align: right;
+    width: 200px;
+    vertical-align: top;
+}
+
+input{
+    font-size: inherit;
+}
+.col-sm-2{
+    margin-left: 20px;
+    position: relative;
+    float: left;
+    
+}

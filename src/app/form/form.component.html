@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Angular Task 2 </title>
+    <title>Form Validation</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
@@ -15,30 +15,24 @@
 
 </head>
 
-<body  class="background_image" style="background-color:Azure">
+<body class="background_image" style="background: none;" >
 
-<section id="navbar">
+<section id="navbar" >
     <nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong">
         <div class="container-fluid">
-          <a class="navbar-brand"><img src="../assets/mxLogo.png"></a>
+        
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto me-auto">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" routerLink="home">Home</a>
+                <a class="nav-link" aria-current="page" routerLink="temp">Template Driven</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" routerLink="form">Form Validation</a>
+                <a class="nav-link" routerLink="react">Reactive Driven</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" routerLink="employee">Employees</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" routerLink="product">Products</a>
-              </li>
-          
+                  
             </ul>
           </div>
         </div>
@@ -46,5 +40,12 @@
 
 </section>
 
-<router-outlet></router-outlet>
 
+
+
+
+
+
+
+
+<router-outlet></router-outlet>

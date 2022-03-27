@@ -6,12 +6,6 @@ a{
     padding: 0;
     
 }
-.background_image{
-    background-image: url('../assets/bg1.jpg');
-    height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
 
 .navbar-nav > li{
@@ -23,26 +17,31 @@ a{
     position: sticky;
     top: 0;
     z-index: 10;
+    
 }
 .navbar-brand img{
     height: 40px;
-    
 }
+
+
 #navbarNav{
-    padding-right: 30vh;
+    padding-right: 10vh;
+    
 }
 .navbar-nav li{
     padding: 0 10px;
 }
 .navbar-nav li a{
-    color: rgb(255, 255, 253) !important;
+    color: rgb(3, 2, 1) !important;
     font-size: 20px;
     font-weight: 350;
     
 }
 
 .navbar-nav a:hover{
-background-color: #2378e7;
+background-color:  #2378e7;
 }
-
+#navbar{
+    background-color: none;
+}
 

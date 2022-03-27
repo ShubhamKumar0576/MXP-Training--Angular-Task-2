@@ -1,0 +1,94 @@
+<h1> Template Form Validation</h1>
+
+    <form name="form" #frm="ngForm" (ngSubmit)="frm.valid && afterSubmit()">
+        <div class="form-group"><p>
+          <label for="username">User Name </label>&nbsp;&nbsp;&nbsp;
+          <input type="text" name="name" [(ngModel)]="user.name" #name="ngModel" required minlength="5" pattern="^[a-zA-Z_ ]+$" placeholder="Enter here" style="border-radius:5px">
+        </p>
+        <div *ngIf="name.invalid && (name.untouched || name.dirty )">
+          <div *ngIf="name.errors?.['required']">
+            <strong>Name Field is required </strong>
+          </div>
+          <div *ngIf="name.errors?.['minlength']">
+            <strong>Name should have at least 5 character </strong>
+          </div>
+          <div *ngIf="name.errors?.['pattern']">
+            <strong>Name can have alphabets only </strong>
+          </div>
+        </div>
+    </div>
+
+    <div class="form-group"><p>
+        <label for="email">Email</label>&nbsp;&nbsp;&nbsp;
+        <input type="text" name="email" [(ngModel)]="user.email" #email="ngModel" required minlength="5" pattern="^([a-zA-z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z]{2,4})+$" placeholder="Enter here" style="border-radius:5px">
+      </p>
+      <div *ngIf="email.invalid && (email.untouched || email.dirty )">
+        <div *ngIf="email.errors?.['required']">
+          <strong>Email Field is required </strong>
+        </div>
+        <div *ngIf="email.errors?.['minlength']">
+          <strong>Email should have at least 5 character </strong>
+        </div>
+        <div *ngIf="email.errors?.['pattern']">
+          <strong>Email pattern not matched </strong>
+        </div>
+      </div>
+  </div>
+
+  <div class="form-group"><p>
+    <label for="mobileNumber">Mobile Number </label>&nbsp;&nbsp;&nbsp;
+    <input type="text"  name="mobile" [(ngModel)]="user.mobile" #mobile="ngModel" required minlength="10" pattern="^[0-9_ ]+$" placeholder="Enter here" style="border-radius:5px">
+  </p>
+  <div *ngIf="mobile.invalid && (mobile.untouched || mobile.dirty )">
+    <div *ngIf="mobile.errors?.['required']">
+      <strong>Mobile Field is required </strong>
+    </div>
+    <div *ngIf="mobile.errors?.['minlength']">
+      <strong>Mobile should have at least 10 character </strong>
+    </div>
+    <div *ngIf="mobile.errors?.['pattern']">
+      <strong>Mobile can have Numbers only </strong>
+    </div>
+  </div>
+</div>
+
+<div class="form-group"><p>
+    <label for="city">City Name </label>&nbsp;&nbsp;&nbsp;
+    <input type="text" name="city" [(ngModel)]="user.city" #city="ngModel" required minlength="2" pattern="^[a-zA-Z_ ]+$" placeholder="Enter here" style="border-radius:5px">
+  </p>
+  <div *ngIf="city.invalid && (city.untouched || city.dirty )">
+    <div *ngIf="city.errors?.['required']">
+      <strong>City Field is required </strong>
+    </div>
+    <div *ngIf="city.errors?.['minlength']">
+      <strong>City should have at least 2 character </strong>
+    </div>
+    <div *ngIf="city.errors?.['pattern']">
+      <strong>City can have alphabets only </strong>
+    </div>
+  </div>
+</div>
+
+<div class="form-group"><p>
+    <label for="pincode">Pincode </label>&nbsp;&nbsp;&nbsp;
+    <input type="text" name="pincode" [(ngModel)]="user.pincode" #pincode="ngModel" required minlength="6" pattern="^[0-9_ ]+$" placeholder="Enter here" style="border-radius:5px">
+  </p>
+  <div *ngIf="pincode.invalid && (pincode.untouched || pincode.dirty )">
+    <div *ngIf="pincode.errors?.['required']">
+      <strong>Pincode Field is required </strong>
+    </div>
+    <div *ngIf="pincode.errors?.['minlength']">
+      <strong>Pincode should have at least 6 number </strong>
+    </div>
+    <div *ngIf="pincode.errors?.['pattern']">
+      <strong>Pincode can have Numbers only </strong>
+    </div>
+  </div>
+</div>
+    
+<div class="btn">
+    <button type="submit"  [disabled]="frm.invalid" class="btn btn-outline-success"> Submit </button> 
+</div>
+    
+</form>
+
